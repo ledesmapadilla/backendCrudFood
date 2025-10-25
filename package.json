@@ -4,10 +4,24 @@
   "description": "Backende del proyecto crudFood",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --env-file .env --watch index",
+    "start": "node index"
   },
-  "keywords": ["rutas", "controlador", "BD mongoDB", "middlewares"],
+  "keywords": [
+    "rutas",
+    "controlador",
+    "BD mongoDB",
+    "middlewares"
+  ],
   "author": "Ignacio LP",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mongoose": "^8.19.1",
+    "morgan": "^1.10.1"
+  }
 }
